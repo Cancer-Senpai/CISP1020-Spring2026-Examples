@@ -1,10 +1,10 @@
-# CISP 1010 – In-Class Code Examples
+# CISP 1020 – In-Class Code Examples 
 
-Welcome to the official repository for in-class code examples for CISP 1010.
+Welcome to the official repository for in-class code examples for CISP 1020.
 This repository contains the code written and discussed during lectures.
 Use
 it as a reference to reinforce your understanding of object-oriented
-programming concepts in C++ and other material covered in class.
+programming concepts in C/C++ and other material covered in class.
 
 ## Purpose of This Repository
 
@@ -39,7 +39,7 @@ main".
 
 #### Option B: Clone Locally (Advanced)
 ```bash
-git clone https://github.com/gymmyp1/CISP1010-Fall2025-Examples.git
+git clone https://github.com/gymmyp1/CISP1020-Spring2025-Examples
 cd REPO_NAME
 ```
 
@@ -52,7 +52,7 @@ updated.
 
 #### One-Time Setup (Add a remote for my repo)
 ```bash
-git remote add upstream https://github.com/gymmyp1/CISP1010-Fall2025-Examples.git
+git remote add upstream https://github.com/gymmyp1/CISP1020-Spring2025-Examples
 ```
 
 #### To Fetch and Merge Updates:
