@@ -6,11 +6,14 @@
 
 class Bee : public Follower {
 public:
-    // Constructor
+    // Constructors
     Bee();
     Bee(std::string name);
     Bee(const Bee& other); //copy constructor
-    ~Bee(); //destructor
+
+    //destructor
+    // (automatically virtual since parent is virtual, but ok to be redundant)
+    virtual ~Bee(); //destructor
 
     // Actions
     void performAction() override;

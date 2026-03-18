@@ -50,6 +50,7 @@ int Follower::getFaith() {
 }
 
 //overloaded << operator
+//marked as friend so it can directly access f's private members
 ostream& operator<<(ostream& os, const Follower& f) {
     os << "Name: " << f.name 
     << " | Devotion: " << f.devotion 

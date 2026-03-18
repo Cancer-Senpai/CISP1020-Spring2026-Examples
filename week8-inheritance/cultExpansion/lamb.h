@@ -6,13 +6,17 @@
 
 class Lamb : public Follower {
 public:
-    // Constructor
+    // Constructors
     Lamb();
     Lamb(std::string name);
     Lamb(const Lamb& other); //copy constructor
-    ~Lamb(); //destructor
+
+    //destructor
+    // (automatically virtual since parent is virtual, but ok to be redundant)
+    virtual ~Lamb();
 
     // Actions
+    //Lamb has its own action
     void performAction() override;
 };
 

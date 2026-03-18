@@ -15,15 +15,17 @@ protected:
     static int faith;
 
 public:
-    // Constructor
+    // Constructors
     Follower();
     Follower(std::string name);
     //copy constructor
     Follower(const Follower& other);
-    //destructor
+    //destructor (should be virtual)
     virtual ~Follower();
 
-    // Generic performAction
+    // Generic performAction- pure virtual function that
+    // isn't defined for Follower, but must be defined
+    // in derived classes
     virtual void performAction() = 0;
 
     // Display individual status

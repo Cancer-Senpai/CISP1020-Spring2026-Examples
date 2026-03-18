@@ -33,10 +33,8 @@ int main() {
 
     //sacrifice!
     cout << cult.size() << endl;
-    delete cult[1];
-    cout << "After delete: "<<cult.size() << endl;
+    delete cult[1]; //this doesn't modify the vector size
     cult.pop_back();
-    cout << "After pop back" << cult.size() << endl;
 
     showCultStatus(cult);
 
@@ -44,6 +42,9 @@ int main() {
     for (size_t i = 0; i < cult.size(); i++) {
         delete cult[i];
     }
+
+    //clear vector in case we want to use it later
+    cult.clear();
     
     return 0;
 }
